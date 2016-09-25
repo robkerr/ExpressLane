@@ -10,7 +10,38 @@
 		D44EFBB11D983E1200E72154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EFBB01D983E1200E72154 /* AppDelegate.swift */; };
 		D44EFBB31D983E1200E72154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44EFBB21D983E1200E72154 /* Assets.xcassets */; };
 		D44EFBB61D983E1200E72154 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44EFBB41D983E1200E72154 /* MainMenu.xib */; };
+		D44EFBC41D983E8900E72154 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44EFBC31D983E8900E72154 /* Cocoa.framework */; };
+		D44EFBC91D983E8900E72154 /* FunctionCommentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EFBC81D983E8900E72154 /* FunctionCommentExtension.swift */; };
+		D44EFBCB1D983E8900E72154 /* FunctionCommentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EFBCA1D983E8900E72154 /* FunctionCommentCommand.swift */; };
+		D44EFBCF1D983E8900E72154 /* Code Documentation.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D44EFBC11D983E8900E72154 /* Code Documentation.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D44EFBD51D98476300E72154 /* FileCommentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EFBD41D98476300E72154 /* FileCommentCommand.swift */; };
+		D4DA061A1D9867A600C2B3EC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DA06191D9867A600C2B3EC /* Util.swift */; };
+		D4DA061B1D98688500C2B3EC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DA06191D9867A600C2B3EC /* Util.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D44EFBCD1D983E8900E72154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44EFBA51D983E1200E72154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44EFBC01D983E8900E72154;
+			remoteInfo = FunctionComment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D44EFBD31D983E8900E72154 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D44EFBCF1D983E8900E72154 /* Code Documentation.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D44EFBAD1D983E1200E72154 /* ExpressLane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpressLane.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +49,14 @@
 		D44EFBB21D983E1200E72154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44EFBB51D983E1200E72154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D44EFBB71D983E1200E72154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44EFBC11D983E8900E72154 /* Code Documentation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Code Documentation.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44EFBC31D983E8900E72154 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D44EFBC71D983E8900E72154 /* FunctionComment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FunctionComment.entitlements; sourceTree = "<group>"; };
+		D44EFBC81D983E8900E72154 /* FunctionCommentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionCommentExtension.swift; sourceTree = "<group>"; };
+		D44EFBCA1D983E8900E72154 /* FunctionCommentCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionCommentCommand.swift; sourceTree = "<group>"; };
+		D44EFBCC1D983E8900E72154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44EFBD41D98476300E72154 /* FileCommentCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileCommentCommand.swift; sourceTree = "<group>"; };
+		D4DA06191D9867A600C2B3EC /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D44EFBBE1D983E8900E72154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44EFBC41D983E8900E72154 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				D44EFBAF1D983E1200E72154 /* ExpressLane */,
+				D44EFBC51D983E8900E72154 /* FunctionComment */,
+				D44EFBC21D983E8900E72154 /* Frameworks */,
 				D44EFBAE1D983E1200E72154 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D44EFBAD1D983E1200E72154 /* ExpressLane.app */,
+				D44EFBC11D983E8900E72154 /* Code Documentation.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +108,35 @@
 			path = ExpressLane;
 			sourceTree = "<group>";
 		};
+		D44EFBC21D983E8900E72154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D44EFBC31D983E8900E72154 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D44EFBC51D983E8900E72154 /* FunctionComment */ = {
+			isa = PBXGroup;
+			children = (
+				D44EFBC81D983E8900E72154 /* FunctionCommentExtension.swift */,
+				D44EFBCA1D983E8900E72154 /* FunctionCommentCommand.swift */,
+				D44EFBD41D98476300E72154 /* FileCommentCommand.swift */,
+				D4DA06191D9867A600C2B3EC /* Util.swift */,
+				D44EFBCC1D983E8900E72154 /* Info.plist */,
+				D44EFBC61D983E8900E72154 /* Supporting Files */,
+			);
+			path = FunctionComment;
+			sourceTree = "<group>";
+		};
+		D44EFBC61D983E8900E72154 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D44EFBC71D983E8900E72154 /* FunctionComment.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,15 +147,34 @@
 				D44EFBA91D983E1200E72154 /* Sources */,
 				D44EFBAA1D983E1200E72154 /* Frameworks */,
 				D44EFBAB1D983E1200E72154 /* Resources */,
+				D44EFBD31D983E8900E72154 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D44EFBCE1D983E8900E72154 /* PBXTargetDependency */,
 			);
 			name = ExpressLane;
 			productName = ExpressLane;
 			productReference = D44EFBAD1D983E1200E72154 /* ExpressLane.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D44EFBC01D983E8900E72154 /* Code Documentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44EFBD01D983E8900E72154 /* Build configuration list for PBXNativeTarget "Code Documentation" */;
+			buildPhases = (
+				D44EFBBD1D983E8900E72154 /* Sources */,
+				D44EFBBE1D983E8900E72154 /* Frameworks */,
+				D44EFBBF1D983E8900E72154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Code Documentation";
+			productName = FunctionComment;
+			productReference = D44EFBC11D983E8900E72154 /* Code Documentation.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -89,6 +187,11 @@
 				ORGANIZATIONNAME = "Mobile Toolworks";
 				TargetAttributes = {
 					D44EFBAC1D983E1200E72154 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4R6ZY9U5BR;
+						ProvisioningStyle = Automatic;
+					};
+					D44EFBC01D983E8900E72154 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4R6ZY9U5BR;
 						ProvisioningStyle = Automatic;
@@ -109,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				D44EFBAC1D983E1200E72154 /* ExpressLane */,
+				D44EFBC01D983E8900E72154 /* Code Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +227,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D44EFBBF1D983E8900E72154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -131,10 +242,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44EFBB11D983E1200E72154 /* AppDelegate.swift in Sources */,
+				D4DA061A1D9867A600C2B3EC /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44EFBBD1D983E8900E72154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DA061B1D98688500C2B3EC /* Util.swift in Sources */,
+				D44EFBD51D98476300E72154 /* FileCommentCommand.swift in Sources */,
+				D44EFBC91D983E8900E72154 /* FunctionCommentExtension.swift in Sources */,
+				D44EFBCB1D983E8900E72154 /* FunctionCommentCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D44EFBCE1D983E8900E72154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44EFBC01D983E8900E72154 /* Code Documentation */;
+			targetProxy = D44EFBCD1D983E8900E72154 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D44EFBB41D983E1200E72154 /* MainMenu.xib */ = {
@@ -241,7 +372,9 @@
 		D44EFBBB1D983E1200E72154 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4R6ZY9U5BR;
 				INFOPLIST_FILE = ExpressLane/Info.plist;
@@ -255,13 +388,49 @@
 		D44EFBBC1D983E1200E72154 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4R6ZY9U5BR;
 				INFOPLIST_FILE = ExpressLane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobiletoolworks.ExpressLane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D44EFBD11D983E8900E72154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FunctionComment/FunctionComment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4R6ZY9U5BR;
+				INFOPLIST_FILE = FunctionComment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiletoolworks.ExpressLane.FunctionComment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D44EFBD21D983E8900E72154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FunctionComment/FunctionComment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4R6ZY9U5BR;
+				INFOPLIST_FILE = FunctionComment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiletoolworks.ExpressLane.FunctionComment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -285,6 +454,16 @@
 				D44EFBBC1D983E1200E72154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44EFBD01D983E8900E72154 /* Build configuration list for PBXNativeTarget "Code Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44EFBD11D983E8900E72154 /* Debug */,
+				D44EFBD21D983E8900E72154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
