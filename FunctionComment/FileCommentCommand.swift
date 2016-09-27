@@ -124,6 +124,8 @@ class FileCommentCommand: NSObject, XCSourceEditorCommand {
         newLines.append("//      Author: \(createdBy)")
         newLines.append("//   Copyright: \(copyright)")
         newLines.append(commentBlankLine)
+        newLines.append("// Description: ")
+        newLines.append(commentBlankLine)
         newLines.append("//  Maintenance History")
         newLines.append("//          \(createdDate)      File Created")
         newLines.append(commentBlankLine)
