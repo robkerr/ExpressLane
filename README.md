@@ -6,4 +6,4 @@ This project is my personal set of XCode 8 Extensions.  This extension set is wr
 Below is a video of the extension in action -- using it in this video to add comments to some Swift code in XCode. 
 
 <iframe src="https://player.vimeo.com/video/184253256" width="640" height="389" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/184253256">XCode 8 Documentation Editor Extension Demo</a> from <a href="https://vimeo.com/user45471880">Mobile Tooolworks</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p><a href="https://vimeo.com/184253256">XCode 8 Documentation Editor Extension Demo</a> .</p>
